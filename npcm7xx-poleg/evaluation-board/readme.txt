@@ -11,14 +11,10 @@ Building instructions:
 ======================
 	In order to build Nuvoton OpenBMC use:
 	======================================
-	https://github.com/Nuvoton-Israel/openbmc/tree/npcm7xx_v2.1
-	or
-	https://github.com/Nuvoton-Israel/openbmc/tree/openbmc_npcm7xx_v2_2
-	or
 	https://github.com/Nuvoton-Israel/openbmc/releases/tag/npcm-v2.3-181030
 	Follow instructions at the README.md inside
-
 	Nuvoton OpenBMC builds both Nuvoton u-boot and linux.
+	
 	To build them separately:
 
 	In order to build Nuvoton linux use:
@@ -61,33 +57,7 @@ Eval_Board
 |   |   uboot_env_parameters.txt - uboot environment that will load and run the OpenBMC_linux_X.X.X
 |   |   linux_peripheral_testings.sh - shell script with examples for reading / writing to peripherals
 |   |
-|   |---Image_Generation_and_Programming
-|   |       IGPS_2.0.0.zip - tools to program the BootBlock and u-boot described
-|   |                        in EVB_BootBlock_U-Boot_Linux.pdf
-|   |
-|   |---npcm7xx_v2.3 - built images of Nuvoton OpenBMC
-|   |       image-bmc    - The entire 32MB image including BootBlock, u-boot, linux kernel
-|   |                      and file system, can be programmed into the beginning of flash
-|   |       image-u-boot - Includes only BootBlock and u-boot and their headers can be
-|   |                      programmed into the beginning of flash
-|   |       image-kernel - FIT image that includes linux kernel, device tree and an
-|   |                      initial file system, can be loaded to the linux area in flash
-|   |       image-rofs   - Main (and large) OpenBMC file system, can be loaded to the
-|   |                      rofs area in flash
-|   |       uboot_env_parameters.txt - uboot environment that will load this image
-|   |
-|   |---npcm7xx_v2.2 - built images of Nuvoton OpenBMC
-|   |       image-bmc    - The entire 32MB image including BootBlock, u-boot, linux kernel
-|   |                      and file system, can be programmed into the beginning of flash
-|   |       image-u-boot - Includes only BootBlock and u-boot and their headers can be
-|   |                      programmed into the beginning of flash
-|   |       image-kernel - FIT image that includes linux kernel, device tree and an
-|   |                      initial file system, can be loaded to the linux area in flash
-|   |       image-rofs   - Main (and large) OpenBMC file system, can be loaded to the
-|   |                      rofs area in flash
-|   |       uboot_env_parameters.txt - uboot environment that will load this image
-|   |
-|   \---npcm7xx_v2.1 - built images of Nuvoton OpenBMC
+|   \---npcm7xx_v2.3 - built images of Nuvoton OpenBMC
 |           image-bmc    - The entire 32MB image including BootBlock, u-boot, linux kernel
 |                          and file system, can be programmed into the beginning of flash
 |           image-u-boot - Includes only BootBlock and u-boot and their headers can be
