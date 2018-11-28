@@ -17,14 +17,7 @@ echo 100 > /sys/class/hwmon/hwmon2/pwm7
 echo 100 > /sys/class/hwmon/hwmon2/pwm8
 
 # FAN3 is called by SW fan4_input on FAN3 pin 3
-cat /sys/class/hwmon/hwmon3/fan*_input
-
-# GPIO 146 is the green LED (muxed with PWM6)
-# GPIO 147 is the red   LED (muxed with PWM7)
-echo 146 > /sys/class/gpio/export            # Allocate GPIO146 in sysfs
-echo out > /sys/class/gpio/gpio146/direction # Set pin direction =out
-echo 1 > /sys/class/gpio/gpio146/value       # Set pin value =1 
-echo 0 > /sys/class/gpio/gpio146/value       # Set pin value =0
+cat /sys/class/hwmon/hwmon2/fan*_input
 
 # i2c
 # There are 2 LM devices on board LM75 and TMP100
