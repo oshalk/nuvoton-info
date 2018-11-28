@@ -80,4 +80,5 @@ For any help please contact:
 tomer.maimon@nuvoton.com
 avi.fishman@nuvoton.com
 tali.perry@nuvoton.com
+oshri.alkoby@nuvoton.com
 ----------------------------
